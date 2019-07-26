@@ -1,20 +1,18 @@
 # Healthy_Lifestyle_Calculator
+# Overview:
+
+Company(Innovellent Technologies Pvt Ltd)_Live_Project.
+
+Download all files and put it in one folder. After that run index.html file on your favorite browser.
+
+Technology Used: HTML/HTML5, CSS/CSS3, Bootstrap 3, JavaScript.
+
+Duration: Mar 2019.
+
 # Description:
 
-Company(Hashworks IT Services Private Limited)_Internship_Project.
+Changing unhealthy habits is very difficult. This tool will empower to take a serious look at habits and educate about serious consequences of habits and significant health benefits of changing unhealthy habits.
 
-Download all files and put it in one folder. After that open that folder on Visual Studio Code editor and install Node modules with help of "npm install" command. Then, comiple that project using "ng serve" command. Finally, open it on your favorite browser using http://localhost:4200 url.
+This App will also help Physician in widening the use of life style management to their patients. They can simply advice patients about this App and then patient can interact with them on missing links only.
 
-Technology Used: HTML/HTML5, CSS/CSS3, Angular 4.
-
-Duration: Nov, 2018 to Dec, 2018.
-
-# Procedure:
-
-First thing you have to do create an angular project using "ng new 'project name' " command and for creating components using "ng g c 'component name' " command. 
-
-Here, created four components header, login, registration and credentials. Header component contains navbar of the application, login and registration components will call their respective credentials form using router-outlet. Credentials component contains respective form.
-
-And every thing design with HTML/HTML5 tags and for style used CSS/CSS3 properties.
-
-Finally, start the application using "ng serve" command.
+Scientific information keep on updating and changing, hence this tool is to provide a very comprehensive, scientific and updated information about major life style diseases, it's prevention and management.
