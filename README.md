@@ -9,7 +9,7 @@ Technology Used: HTML/HTML5, CSS/CSS3, Bootstrap 3, JavaScript.
 
 Duration: Mar 2019.
 
-URL:https://sumandeyashi.github.io/Healthy_Lifestyle_Calculator/
+URL: https://sumandeyashi.github.io/Healthy_Lifestyle_Calculator/
 
 # Description:
 
