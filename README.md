@@ -9,6 +9,8 @@ Technology Used: HTML/HTML5, CSS/CSS3, Bootstrap 3, JavaScript.
 
 Duration: Mar 2019.
 
+URL:https://sumandeyashi.github.io/Healthy_Lifestyle_Calculator/
+
 # Description:
 
 Changing unhealthy habits is very difficult. This tool will empower to take a serious look at habits and educate about serious consequences of habits and significant health benefits of changing unhealthy habits.
