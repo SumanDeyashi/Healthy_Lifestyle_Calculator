@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Risk_Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css"> 
+</head>
+  
+
+<body style="background-color:#e0f7fa;">
+<br>
+<!--Select Your Age-->
+<script type="text/javascript">
+  function moveage(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function moveagepointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow1').innerHTML = moveage(40,'arrow1');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow1').innerHTML = moveage(70,'arrow1');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow1').innerHTML = moveage(100,'arrow1');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow1').innerHTML = moveage(160,'arrow1');
+  }
+
+   else if (element.value=='5')
+  {
+    document.getElementById('arrow1').innerHTML = moveage(240,'arrow1');
+  }
+   else if (element.value=='6')
+  {
+    document.getElementById('arrow1').innerHTML = moveage(300,'arrow1');
+  }
+}
+	
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Select Your Age</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" onchange="moveagepointer(this)" data-width="auto">
+					    <option value="">Choose your option...</option>
+					    <option value="1">15-25 yrs</option>
+					    <option value="2">25-35 yrs</option>
+					    <option value="3">35-45 yrs</option>
+					    <option value="4">45-65 yrs</option>
+					    <option value="5">65-85 yrs</option>
+					    <option value="6">> 85 yrs</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+               <table>
+               	<tr>
+               		<td colspan="4"><img id="arrow1" src="images/arrow.png"></td>
+               	</tr>
+               	 
+               </table>
+                
+               <br><br>
+                   <table class="table table-striped">
+                   	
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+  
+  
+  <hr style="border: 0.5px solid #bdbdbd;">
+
+  <!--Regular Exercise-->
+
+  <script type="text/javascript">
+  function moverugular(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function moveregularpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow2').innerHTML = moverugular(40,'arrow2');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow2').innerHTML = moverugular(150,'arrow2');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow2').innerHTML = moverugular(300,'arrow2');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow2').innerHTML = moverugular(500,'arrow2');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Regular Exercise (at least 5 days a week)</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="moveregularpointer(this)" >
+					    <option value="">Choose your option...</option>
+					    <option value="1">40-60 min Moderate</option>
+					    <option value="2">40-60 min Light exercise</option>
+					    <option value="3">Less than 40 Min Light Exercise</option>
+					    <option value="4">No exercise regularly</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow2" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+  
+  <hr style="border: 0.5px solid #bdbdbd;">
+
+<!---Do you Eat Home Cooked Food--->
+ <script type="text/javascript">
+  function movecookedfood(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movecookedfoodpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow3').innerHTML = movecookedfood(40,'arrow3');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow3').innerHTML = movecookedfood(150,'arrow3');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow3').innerHTML = movecookedfood(300,'arrow3');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow3').innerHTML = movecookedfood(500,'arrow3');
+  }
+}
+  
+</script>
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Do you Eat Home Cooked Food</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movecookedfoodpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">Daily</option>
+					    <option value="2">5 -6 days a week</option>
+					    <option value="3">3-5 days a week</option>
+              <option value="4"> < 3 days a week</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow3" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;">
+
+<!---Do you Eat Processed Food--->
+
+ <script type="text/javascript">
+  function moveprocessedfood(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function moveprocessedfoodpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow4').innerHTML = moveprocessedfood(40,'arrow4');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow4').innerHTML = moveprocessedfood(150,'arrow4');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow4').innerHTML = moveprocessedfood(300,'arrow4');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow4').innerHTML = moveprocessedfood(440,'arrow4');
+  }
+    else if (element.value=='5')
+  {
+    document.getElementById('arrow4').innerHTML = moveprocessedfood(530,'arrow4');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Do you Eat Processed Food (Number of days in a week)</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="moveprocessedfoodpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">< 1 day</option>
+					    <option value="2">1-2 days</option>
+					    <option value="3">3-4 days</option>
+    			    <option value="4">4-5 days</option>
+    			    <option value="5">Daily</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow4" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;">
+
+<!---Do you prefer Added Sugar and sweetsdaily--->
+
+ <script type="text/javascript">
+  function movesugersweetfood(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movesugersweetpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow5').innerHTML = movesugersweetfood(40,'arrow5');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow5').innerHTML = movesugersweetfood(300,'arrow5');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow5').innerHTML = movesugersweetfood(480,'arrow5');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Do you prefer Added Sugar and Sweets daily</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movesugersweetpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">Minimum</option>
+    					<option value="2">Moderate</option>
+    			    	<option value="3">Love daily</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow5" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;">
+ 
+<!---Do you take Packed Juice or Drinks--->
+
+ <script type="text/javascript">
+  function movepackeddrinks(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movepackeddrinkspointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow6').innerHTML = movepackeddrinks(40,'arrow6');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow6').innerHTML = movepackeddrinks(170,'arrow6');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow6').innerHTML = movepackeddrinks(320,'arrow6');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow6').innerHTML = movepackeddrinks(460,'arrow6');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Do you take Packed Juice or Coke/Pepsi/Energy Drinks (Per week)</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movepackeddrinkspointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">< 1</option>
+    					<option value="2">1-3</option>
+    			    	<option value="3">3-5</option>
+    			    	<option value="4">> 5</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow6" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;"> 				
+  		
+<!---How much Vegetables you eat daily--->
+
+ <script type="text/javascript">
+  function movevegetablesdaily(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movevegetablesdailypointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow7').innerHTML = movevegetablesdaily(30,'arrow7');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow7').innerHTML = movevegetablesdaily(170,'arrow7');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow7').innerHTML = movevegetablesdaily(320,'arrow7');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow7').innerHTML = movevegetablesdaily(530,'arrow7');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>How much Vegetables you eat daily (% of food)</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movevegetablesdailypointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">> 60%</option>
+    					<option value="2">40-60%</option>
+    			    	<option value="3">< 40 %</option>
+    			    	<option value="4">Nil</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow7" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;"> 				
+  	
+
+<!---How many Eggs you eat per week --->
+
+
+ <script type="text/javascript">
+  function moveeggweek(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function moveeggweekpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow8').innerHTML = moveeggweek(30,'arrow8');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow8').innerHTML = moveeggweek(55,'arrow8');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow8').innerHTML = moveeggweek(85,'arrow8');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow8').innerHTML = moveeggweek(160,'arrow8');
+  }
+   else if (element.value=='5')
+  {
+    document.getElementById('arrow8').innerHTML = moveeggweek(290,'arrow8');
+  }
+   else if (element.value=='6')
+  {
+    document.getElementById('arrow8').innerHTML = moveeggweek(480,'arrow8');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>How many Eggs you eat per week </label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="moveeggweekpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">< 2</option>
+    					<option value="2">3-5</option>
+    					<option value="3">5-6</option>
+    			    	<option value="4">7-9</option>
+    			    	<option value="5">10-14</option>
+    			    	<option value="6">> 15</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow8" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;">
+            
+           
+<!---How many times you eat Meat per week --->
+
+<script type="text/javascript">
+  function movemeatweek(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movemeatweekpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow9').innerHTML = movemeatweek(30,'arrow9');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow9').innerHTML = movemeatweek(280,'arrow9');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow9').innerHTML = movemeatweek(380,'arrow9');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow9').innerHTML = movemeatweek(450,'arrow9');
+  }
+   else if (element.value=='5')
+  {
+    document.getElementById('arrow9').innerHTML = movemeatweek(530,'arrow9');
+  }
+ 
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>How many times you eat Meat per week</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movemeatweekpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">Never</option>
+					    <option value="2">1-2 times</option>
+    					<option value="3">3-5 times</option>
+    			    	<option value="4">5-10 times</option>
+    			    	<option value="5">> 10 times</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow9" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;">
+
+
+<!--How many No of Cigarettes or Bidi or Tobacco chewing weekly-->
+
+<script type="text/javascript">
+  function movetobaccoweek(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movetobaccoweekpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow10').innerHTML = movetobaccoweek(30,'arrow10');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow10').innerHTML = movetobaccoweek(160,'arrow10');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow10').innerHTML = movetobaccoweek(300,'arrow10');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow10').innerHTML = movetobaccoweek(530,'arrow10');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>How many No of Cigarettes or Bidi or Tobacco chewing weekly, You do?</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movetobaccoweekpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">Nill</option>
+					    <option value="2">1-5</option>
+					    <option value="3">5-10</option>
+					    <option value="4">> 10</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow10" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+  
+  <hr style="border: 0.5px solid #bdbdbd;">
+<!--How much Alcohol you take (Drinks weekly)-->
+
+<script type="text/javascript">
+  function movealcoholweek(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movealcoholweekpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow11').innerHTML = movealcoholweek(30,'arrow11');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow11').innerHTML = movealcoholweek(150,'arrow11');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow11').innerHTML = movealcoholweek(300,'arrow11');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow11').innerHTML = movealcoholweek(360,'arrow11');
+  }
+   else if (element.value=='5')
+  {
+    document.getElementById('arrow11').innerHTML = movealcoholweek(480,'arrow11');
+  }
+ 
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>How much Alcohol you take (Drinks weekly)</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movealcoholweekpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">Nill</option>
+					    <option value="2">1-5</option>
+					    <option value="3">5-10</option>
+					    <option value="4">10-14</option>
+					    <option value="5">> 14</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow11" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <hr style="border: 0.5px solid #bdbdbd;">
+
+<!--Do you frequently feel stressed at home or office-->
+
+
+<script type="text/javascript">
+  function movestressed(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movestressedpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow12').innerHTML = movestressed(30,'arrow12');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow12').innerHTML = movestressed(150,'arrow12');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow12').innerHTML = movestressed(300,'arrow12');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow12').innerHTML = movemeatweek(480,'arrow12');
+  } 
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Do you frequently feel stressed at home or office</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movestressedpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">No</option>
+					    <option value="2">Mildly</option>
+					    <option value="3">Moderately</option>
+					    <option value="4">Severely</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow12" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <hr style="border: 0.5px solid #bdbdbd;">
+
+<!--Do you get good 6-8 hours sleep-->
+
+<script type="text/javascript">
+  function movesleephour(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movesleephourpointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow13').innerHTML = movesleephour(30,'arrow13');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow13').innerHTML = movesleephour(150,'arrow13');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow13').innerHTML = movesleephour(300,'arrow13');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow13').innerHTML = movesleephour(470,'arrow13');
+  } 
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>Do you get good 6-8 hours sleep</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movesleephourpointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">All 7 days</option>
+					    <option value="2">5-6 days</option>
+					    <option value="3">3-4 days</option>
+					    <option value="4">< 3 days</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow13" src="images/arrow.png"> 
+                    <br><br>
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+
+
+<hr style="border: 0.5px solid #bdbdbd;">
+<!--How much is your BMI-->
+
+<script type="text/javascript">
+  function movehowbmi(position,arrowid) {
+  var elem = document.getElementById(arrowid);  
+  var pos = 15;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == position) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.right = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+function movehowbmipointer(element)
+{
+  if (element.value=='1')
+  {
+     document.getElementById('arrow14').innerHTML = movehowbmi(30,'arrow14');
+  }
+  else if (element.value=='2')
+  {
+    document.getElementById('arrow14').innerHTML = movehowbmi(30,'arrow14');
+  }
+
+   else if (element.value=='3')
+  {
+    document.getElementById('arrow14').innerHTML = movehowbmi(150,'arrow14');
+  }
+
+   else if (element.value=='4')
+  {
+    document.getElementById('arrow14').innerHTML = movehowbmi(300,'arrow14');
+  }
+   else if (element.value=='5')
+  {
+    document.getElementById('arrow14').innerHTML = movehowbmi(480,'arrow14');
+  }
+  else if (element.value=='6')
+  {
+    document.getElementById('arrow14').innerHTML = movehowbmi(520,'arrow14');
+  }
+}
+  
+</script>
+
+<div class="container">  
+        <div class="row">  
+            <div class="col-md-6">
+            	<div class="form-group"> 
+                    <label>How much is your BMI</label><br>
+                	<select  class="selectpicker" data-style="btn btn-info" data-width="auto" onchange="movehowbmipointer(this)">
+					    <option value="">Choose your option...</option>
+					    <option value="1">< 19</option>
+					    <option value="2">19-24.9</option>
+					    <option value="3">25-29.9</option>
+					    <option value="4">30-34.9</option>
+					    <option value="5">35-40</option>
+					    <option value="6">> 40</option>
+					</select>  
+                </div>
+            </div> 
+
+            <div class="col-md-6"> 
+                <div>
+                  <img id="arrow14" src="images/arrow.png"> 
+                   <br><br> 
+                   <table class="table table-striped">
+                   	<tr>
+                   		<td class="data1"></td>
+                   		<td class="data2"></td>
+                   		<td class="data3"></td>
+                   		<td class="data4"></td>
+                   	</tr>
+                   </table>
+                </div>
+            </div>
+        </div>     
+    </div>
+<hr style="border: 0.5px solid #bdbdbd;">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+</body>
+</html>
