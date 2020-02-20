@@ -18,4 +18,3 @@ Changing unhealthy habits is very difficult. This tool will empower to take a se
 This App will also help Physician in widening the use of life style management to their patients. They can simply advice patients about this App and then patient can interact with them on missing links only.
 
 Scientific information keep on updating and changing, hence this tool is to provide a very comprehensive, scientific and updated information about major life style diseases, it's prevention and management.
-ss
